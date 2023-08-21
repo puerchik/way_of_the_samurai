@@ -1,0 +1,18 @@
+.postWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    background: rgb(55, 56, 60);
+    background: radial-gradient(circle, rgba(55, 56, 60, 1) 0%, rgba(104, 150, 150, 1) 50%, rgba(55, 56, 60, 1) 100%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.postText {
+    font-size: 19px;
+}

@@ -1,0 +1,28 @@
+.navSidebar {
+    width: 19%;
+    margin-right: 10px;
+  }
+  
+  .navSidebarList {
+    all: unset;
+    display: block;
+    list-style: none;
+  }
+
+  .item {
+    margin-bottom: 10px;
+  }
+
+  .item a {
+    all: unset;
+    font-size: 19px;
+  }
+
+    .item a:hover {
+      cursor: pointer;
+      color: rgb(215, 211, 211);
+    }
+
+    .item a.active {
+      color: rgb(190, 173, 173);
+    }

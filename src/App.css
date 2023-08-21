@@ -9,41 +9,19 @@ body {
   margin: 0 auto;
 }
 
-.background-theme {
+.backgroundTheme {
   background-color: #37383c;
   border: 1px solid #989797;
   border-radius: 10px;
-  padding: 15px 25px;
+  padding: 30px 0 30px 45px;
 }
 
-.header {
-  margin-bottom: 10px;
-  background: rgb(55, 56, 60);
-  background: linear-gradient(90deg, rgba(55, 56, 60, 1) 0%, rgba(71, 71, 85, 1) 50%, rgba(55, 56, 60, 1) 100%);
-  text-align: center;
-  font-size: 30px;
-}
-
-.main-wrapper {
-  display: flex;
-  justify-content: space-between;
-  min-height: 500px;
-}
-
-.nav-sidebar {
-  width: 19%;
-  margin-right: 10px;
-}
-
-.main {
+.mainWidth {
   width: 80%;
 }
 
-.nav-sidebar__list {
-  list-style: none;
-}
-
-.main__image {
-  width: 50%;
-
+.mainWrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 500px;
 }

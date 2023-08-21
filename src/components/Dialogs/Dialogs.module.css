@@ -1,0 +1,50 @@
+.dialogsWrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dialogsNamesWrapper {
+    all: unset;
+    list-style: none;
+    margin-right: 50px;
+}
+
+.dialogsTextWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialogBox {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+
+.dialogBoxName {
+    width: 50px;
+    margin-right: 15px;
+    align-items: top;
+}
+
+.dialogBoxText {
+    all: unset;
+    align-items: top;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.item a {
+    all: unset;
+    font-size: 19px;
+}
+
+.item a:hover {
+    cursor: pointer;
+    color: rgb(215, 211, 211);
+}
+
+.item a.active {
+    color: rgb(190, 173, 173);
+}
