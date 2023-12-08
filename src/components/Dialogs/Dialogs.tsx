@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./Dialogs.module.css"
-import { NavLink } from "react-router-dom";
+import { DialogItem } from "../DialogItem/DialogItem";
+import { DialogBox } from "../DialogBox/DialogBox";
 
 type DialogsPropsType = {
 
@@ -14,34 +15,16 @@ export const Dialogs: React.FC<DialogsPropsType> = (
     return (
         <div className={`backgroundTheme mainWidth ${s.dialogsWrapper}`}>
             <ul className={s.dialogsNamesWrapper}>
-                <li className={s.item}>
-                    <NavLink activeClassName={s.active} to={'/dialogs/1'}>Andrey</NavLink>
-                </li>
-                <li className={s.item}>
-                    <NavLink activeClassName={s.active} to={'/dialogs/2'}>Dmitry</NavLink>
-                </li>
-                <li className={s.item}>
-                    <NavLink activeClassName={s.active} to={'/dialogs/3'}>Sasha</NavLink>
-                </li>
-                <li className={s.item}>
-                    <NavLink activeClassName={s.active} to={'/dialogs/4'}>Sveta</NavLink>
-                </li>
-                <li className={s.item}>
-                    <NavLink activeClassName={s.active} to={'/dialogs/5'}>Viktor</NavLink>
-                </li>
-                <li className={s.item}>
-                    <NavLink activeClassName={s.active} to={'/dialogs/6'}>Valera</NavLink>
-                </li>
+                <DialogItem name="Andrey" id={1} />
+                <DialogItem name="Dmitry" id={2} />
+                <DialogItem name="Sasha" id={3} />
+                <DialogItem name="Sveta" id={4} />
+                <DialogItem name="Viktor" id={5} />
+                <DialogItem name="Valera" id={6} />
             </ul>
             <div className={s.dialogsTextWrapper}>
-                <div className={s.dialogBox}>
-                    <span className={s.dialogBoxName}>Dmitry</span>
-                    <p className={s.dialogBoxText}>Hello, how are you?</p>
-                </div>
-                <div className={s.dialogBox}>
-                    <span className={s.dialogBoxName}>Me</span>
-                    <p className={s.dialogBoxText}>Hi, I'm fine. How are you?</p>
-                </div>
+                <DialogBox name="Dmitry" message="Hello, how are you?"/>
+                <DialogBox name="Me" message="Hi, I'm fine. How are you?"/>
             </div>
         </div>
     )
