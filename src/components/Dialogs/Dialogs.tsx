@@ -12,19 +12,29 @@ export const Dialogs: React.FC<DialogsPropsType> = (
 
     }
 ) => {
+
+    const users = [
+        { id: 1, name: "Andrey" },
+        { id: 2, name: "Dmitry" },
+        { id: 3, name: "Sasha" },
+        { id: 4, name: "Sveta" },
+        { id: 5, name: "Viktor" },
+        { id: 6, name: "Valera" }
+    ]
+
+    const dialogs = [
+        { name: "Dmitry", message: "Hello, how are you?" },
+        { name: "Me", message: "Hi, I'm fine. How are you?" }
+    ]
+
+
     return (
         <div className={`backgroundTheme mainWidth ${s.dialogsWrapper}`}>
             <ul className={s.dialogsNamesWrapper}>
-                <DialogItem name="Andrey" id={1} />
-                <DialogItem name="Dmitry" id={2} />
-                <DialogItem name="Sasha" id={3} />
-                <DialogItem name="Sveta" id={4} />
-                <DialogItem name="Viktor" id={5} />
-                <DialogItem name="Valera" id={6} />
+                {users.map(u => <DialogItem name={u.name} id={u.id} />)}
             </ul>
             <div className={s.dialogsTextWrapper}>
-                <DialogBox name="Dmitry" message="Hello, how are you?"/>
-                <DialogBox name="Me" message="Hi, I'm fine. How are you?"/>
+                {dialogs.map(d => <DialogBox name={d.name} message={d.message} />)}
             </div>
         </div>
     )
